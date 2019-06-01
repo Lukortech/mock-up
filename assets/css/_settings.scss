@@ -1,0 +1,27 @@
+// Colors: 
+$text-primary: #333;
+$text-secondary: lighten(#333 ,10%);
+$text-inverted: invert(#333);
+$main: #4be;
+
+$background-primary: #EEE;
+$background-secondary: darken(#EEE, 10%);
+$background-inverted: invert(#EEE);
+
+
+// Media queries:
+@mixin small() {
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+      @content;
+  }
+}
+@mixin medium() {
+  @media only screen and (min-width: 768px) and (max-width: 1440px){
+      @content;
+  }
+}
+@mixin large() {
+  @media only screen and (min-width: 1440px) {
+      @content;
+  }
+}
